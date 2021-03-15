@@ -1,0 +1,35 @@
+footer{
+    background: $very-dark-blue;
+    .container{
+        @extend %container;
+        @extend %flex-stack;
+        justify-content: space-between;
+        .footer-left{
+            @extend %flex-stack;
+            h2{
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+            .footer-links{
+                display: flex;
+                li{
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        margin: 0 1.2rem;
+                    }
+                }
+            }
+        }
+        .footer-right{
+            display: flex;
+            align-items: center;
+            img{
+                margin: 0 1rem;
+            }
+        }
+    }
+}

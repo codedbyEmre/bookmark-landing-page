@@ -1,0 +1,31 @@
+@import 'configs';
+@import 'header';
+@import 'mobile';
+@import 'main';
+@import 'extensions';
+@import 'accordion';
+@import 'newsletter';
+@import 'footer';
+
+*{
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.attribution{
+    bottom: 0;
+    padding: 2rem 0.5rem 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+    a{
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #fff;
+    }
+}

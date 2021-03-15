@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Bookmark landing page</title>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <img src="./images/logo-bookmark.svg" alt="" class="logo">
+        <ul class="nav-links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+          <button>Login</button>
+        </ul>
+        <div class="hamburger-menu burger">
+          <i class="fas fa-bars fa-2x"></i>
+          <i class="fas fa-times fa-2x"></i>
+        </div>
+      </nav>
+      <section class="showcase">
+        <div class="showcase-left">
+          <h1 class="text">A Simple Bookmark Manager</h1>
+          <p class="text">
+            A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+          <div class="cta text">
+            <button>Get it on Chrome</button>
+            <button>Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="showcase-right">
+          <img src="./images/illustration-hero.svg" alt="">
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main data-aos="fade-up-right">
+    <div class="container">
+      <div class="tab-header">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+      <div class="tab-content">
+
+        <div class="title-box">
+          <button id="title1">
+              <h3>Simple Bookmarking</h3>
+          </button>
+          <button id="title2">
+              <h3>Speedy Searching</h3>
+          </button>
+          <button id="title3">
+              <h3>Easy Sharing</h3>
+          </button>
+        </div>
+
+        <div class="content" id="content1">
+            <div class="content-left">
+                <img src="./images/illustration-features-tab-1.svg" alt="">
+            </div>
+            <div class="content-right">
+                <h2>Bookmark in one click</h2>
+                <p>
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.
+                </p>
+                <button>More Info</button>
+            </div>
+        </div>
+        <div class="content" id="content2">
+          <div class="content-left">
+              <img src="./images/illustration-features-tab-2.svg" alt="">
+          </div>
+          <div class="content-right">
+              <h2>Intelligent search</h2>
+              <p>
+                Our powerful search feature will help you find saved sites in no time at all. 
+                No need to trawl through all of your bookmarks.
+              </p>
+              <button>More Info</button>
+          </div>
+        </div>
+        <div class="content" id="content3">
+        <div class="content-left">
+            <img src="./images/illustration-features-tab-3.svg" alt="">
+        </div>
+        <div class="content-right">
+            <h2>Share your bookmarks</h2>
+            <p>
+              Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.
+            </p>
+            <button>More Info</button>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <section class="extensions">
+    <div class="container">
+      <div class="extension-header">
+        <h2>Download the extension</h2>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+      <div class="extension-body" data-aos="zoom-in">
+        <div class="extension" data-aos="flip-left">
+          <img src="./images/logo-chrome.svg" alt="chrome">
+          <h2>Add to Chrome</h2>
+          <h4>Minimum version 62</h4>
+          <button>Add & Install Extension</button>
+        </div>
+        <div class="extension" data-aos="flip-right">
+          <img src="./images/logo-firefox.svg" alt="chrome">
+          <h2>Add to Firefox</h2>
+          <h4>Minimum version 55</h4>
+          <button>Add & Install Extension</button>
+        </div>
+        <div class="extension" data-aos="flip-left">
+          <img src="./images/logo-opera.svg" alt="chrome">
+          <h2>Add to Opera</h2>
+          <h4>Minimum version 46</h4>
+          <button>Add & Install Extension</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="accordion-container" data-aos="fade-left">
+    <div class="container">
+
+      <div class="accordion-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.
+        </p>
+      </div>
+
+      <div class="accordion-body">
+
+        <div class="accordion">
+          <h3>What is Bookmark?</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </p>
+          <div class="open-accordion">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="close-accordion">
+            <i class="fas fa-chevron-up"></i>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <h3>How can I request a new browser?</h3>
+          <p>
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+          </p>
+          <div class="open-accordion">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="close-accordion">
+            <i class="fas fa-chevron-up"></i>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <h3>Is there a mobile app?</h3>
+          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+            sollicitudin ex et ultricies bibendum.</p>
+          <div class="open-accordion">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="close-accordion">
+            <i class="fas fa-chevron-up"></i>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <h3>What about other Chromium browsers?</h3>
+          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          <div class="open-accordion">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="close-accordion">
+            <i class="fas fa-chevron-up"></i>
+          </div>
+        </div>
+      </div>
+      <button>More Info</button>
+    </div>
+  </section>
+
+  <section class="newsletter" data-aos="zoom-in-up">
+    <div class="container">
+      <h4>35,000+ already joined</h4>
+      <h1>Stay up-to-date with what we’re doing</h1>
+      <form id="form" class="form">
+        <input type="email" placeholder="Enter your email address">
+        <button type="submit">Contact Us</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">
+        <h2>Bookmark</h2>
+        <ul class="footer-links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <a href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+        <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Emre Süslü</a>.
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

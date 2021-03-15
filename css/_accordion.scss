@@ -1,0 +1,92 @@
+%chevrons{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.accordion-container{
+    min-height: 80vh;
+    margin-top: 5rem;
+    .container{
+        @extend %container;
+        text-align: center;
+        .accordion-header{
+            text-align: center;
+            padding: 0 1rem;
+            h2{
+                font-size: 1.75rem;
+                color: $very-dark-blue;
+                margin-bottom: 0;
+            }
+            p{
+                font-weight: 500;
+                opacity: 0.45;
+                color: $very-dark-blue;
+                margin-top: 1.5rem;
+                line-height: 1.5;
+            }
+        }
+        .accordion-body{
+            flex: 9;
+            padding-right: 0.5rem;
+            margin-top: 4rem;
+            padding: 0 1rem;
+            text-align: left;
+            .accordion{
+              position: relative;
+              border-bottom: 2px solid $very-dark-blue;
+              opacity: 0.75;
+              color: $very-dark-blue;
+              h3{
+                font-weight: 500;
+                font-size: 1.25rem;
+                padding-right: 0.5rem;
+              }
+              p{
+                display: none;
+                font-weight: 500;
+                font-size: 1rem;
+                opacity: 0.6;
+                color: $very-dark-blue;
+                line-height: 1.4;
+              }
+              .open-accordion{
+                display: block;
+                @extend %chevrons;
+              }
+              .close-accordion{
+                display: none;
+                @extend %chevrons;
+              }
+              &.active{
+                p{
+                    display: block;
+                }
+                .open-accordion{
+                display: none;
+                @extend %chevrons;
+                }
+                .close-accordion{
+                display: block;
+                @extend %chevrons;
+              }
+            }
+          }
+        }
+        button{
+          @extend %button;
+          background: $soft-blue;
+          padding: 0.65rem 2rem;
+          color: #fff;
+          font-weight: 500;
+          margin-top: 3rem;
+          border: 2px solid $soft-blue;
+          transition: 0.3s ease all;
+          &:hover{
+            background-color: #fff;
+            color: $soft-blue;
+          }
+        }
+ }
+}

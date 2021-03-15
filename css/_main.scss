@@ -1,0 +1,105 @@
+main{
+    min-height: 100vh;
+    margin-top: 2rem;
+    .container{
+        @extend %container;
+        overflow: hidden;
+        .tab-header{
+            text-align: center;
+            h2{
+                font-size: 2rem;
+                letter-spacing: 1px;
+                color: $very-dark-blue;
+            }
+            p{
+                font-weight: 500;
+                font-size: 1.1rem;
+                color: $very-dark-blue;
+                opacity: 0.45;
+                padding: 0 1rem;
+                line-height: 1.5;
+            }
+        }
+        .tab-content{
+            .title-box{
+                @extend %flex-stack;
+                margin-top: 2rem;
+                button{
+                    @extend %button;
+                    border-radius: 0;
+                    margin: 0 1.5rem;
+                    color: $very-dark-blue;
+                    font-weight: 600;
+                    opacity: 0.45;
+                    transition: 0.3s ease all;
+                    letter-spacing: 1px;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 3px;
+                        background-color: $very-dark-blue;
+                        left: 0;
+                        bottom: 2px;
+                    }
+                    &:nth-of-type(1){
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .content{
+                margin-top: 3rem;
+                @extend %flex-stack;
+                justify-content: space-between;
+                padding: 0 2rem;
+                position: absolute;
+                transform: translateX(110%);
+                transition: 0.4s;
+                .content-left{
+                    margin-right: 2rem;
+                    flex: 1;
+                    img{
+                        width: 80%;
+                    }
+                }
+                .content-right{
+                    flex: 1;
+                    h2{
+                        color: $very-dark-blue;
+                        opacity: 0.9;
+                        font-size: 1.75rem;
+                        margin-bottom: 0;
+                    }
+                    p{
+                        color: $very-dark-blue;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        opacity: 0.4;
+                        line-height: 1.4;
+                        width: 80%;
+                        margin: 1.5rem 0
+                    }
+                    button{
+                        @extend %button;
+                        background-color: $soft-blue;
+                        color: #fff;
+                        padding: 0.6rem 1.5rem;
+                        font-size: 0.9rem;
+                        border: 2px solid $soft-blue;
+                        transition: 0.3s ease all;
+                        font-weight: 500;
+                        &:hover{
+                            background-color: #fff;
+                            color: $soft-blue;
+                        }
+                    }
+                }
+                &#content1{
+                    transform: translateX(0%);
+                }
+            }
+        }
+    }
+}

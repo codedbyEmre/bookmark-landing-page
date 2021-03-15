@@ -1,0 +1,89 @@
+.extensions{
+    min-height: 80vh;
+    margin-top: 2rem;
+    .container{
+        @extend %container;
+        .extension-header{
+            @extend %flex-stack;
+            flex-direction: column;
+            h2{
+                font-size: 1.75rem;
+                color: $very-dark-blue;
+                font-weight: 600;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            p{
+                font-weight: 500;
+                color: $very-dark-blue;
+                opacity: 0.4;
+                text-align: center;
+                padding: 0 1rem;
+                margin-top: 1.6rem;
+                line-height: 1.5;
+            }
+        }
+        .extension-body{
+            @extend %flex-stack;
+            margin-top: 3rem;
+            .extension{
+                cursor: pointer;
+                text-align: center;
+                box-shadow: 0 5px 8px hsl(228, 6%, 84%);
+                padding: 2rem 2.25rem;
+                border-radius: 10px;
+                margin: 0 1rem;
+                &:nth-of-type(1){
+                    transform: translateY(0px);
+                    transition: 0.4s ease all;
+                    &:hover{
+                        transform: translateY(-10px);
+                        box-shadow: 0 5px 10px hsl(228, 4%, 74%);
+                    }
+                }
+                &:nth-of-type(2){
+                    transform: translateY(40px);
+                    transition: 0.4s ease all;
+                    &:hover{
+                        transform: translateY(30px);
+                        box-shadow: 0 5px 10px hsl(228, 4%, 74%);
+                    }
+                }
+                &:nth-of-type(3){
+                    transform: translateY(80px);
+                    transition: 0.4s ease all;
+                    &:hover{
+                        transform: translateY(70px);
+                        box-shadow: 0 5px 10px hsl(228, 4%, 74%);
+                    }
+                }
+                h2{
+                    margin-bottom: 0;
+                    font-size: 1.25rem;
+                    color: $very-dark-blue;
+                }
+                h4{
+                    margin-top: 0.5rem;
+                    opacity: 0.4;
+                    font-size: 0.9rem;
+                    color: $very-dark-blue;
+                    position: relative;
+                }
+                button{
+                    margin-top: 0.5rem;
+                    @extend %button;
+                    background-color: $soft-blue;
+                    color: #fff;
+                    padding: 0.65rem 0.75rem;
+                    border: 2px solid $soft-blue;
+                    transition: 0.3s ease all;
+                    font-weight: 500;
+                    &:hover{
+                        background-color: #fff;
+                        color: $soft-blue;
+                    }
+                }
+            }
+        }
+    }
+}

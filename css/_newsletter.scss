@@ -1,0 +1,46 @@
+.newsletter{
+    min-height: 35vh;
+    background-color: $soft-blue;
+    color: #fff;
+    @extend %flex-stack;
+    .container{
+        @extend %container;
+        text-align: center;
+        h4{
+            font-weight: 400;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h1{
+            font-weight: 500;
+        }
+        .form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+            button,input{
+                padding: 0.7rem 1rem;
+                border: none;
+                outline: none;
+            }
+            input{
+                border-radius: 5px;
+                width: 250px;
+                margin-right: 1rem;
+            }
+            button{
+                background-color: $soft-red;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 500;
+                @extend %button;
+                transition: 0.3s ease all;
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
